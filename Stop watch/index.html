@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <i class="fa-solid fa-stopwatch"></i>
+          <p>StopWatch</p>
+        </div>
+        <ul class="links">
+          <li>
+            <i class="fa-solid fa-chart-simple"></i><a href="#">Report</a>
+          </li>
+          <li><i class="fa-solid fa-gear"></i><a href="#">Setting</a></li>
+          <li><i class="fa-solid fa-user"></i><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="box">
+            <div class="reset" onclick="restartTimer()">Reset</div>
+          <div class="time">
+            <div class="timer-container">
+              <p id="hours">0</p>
+              <div class="dot">:</div>
+              <p id="minute">0</p>
+              <div class="dot">:</div>
+              <p id="second">0</p>
+            </div>
+
+            <a href="#" class="btn-start" onclick="startTimer()">Start</a>
+            <a href="#" class="btn-pause" onclick="startTimer(true)">Pause</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
